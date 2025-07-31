@@ -1,0 +1,15 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./globals.css";
+import App from "./App";
+import { ThemeProvider } from "./components/themeProvider";
+import ThemeToggle from "./components/themeToggle";
+
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+      <App /> 
+      <ThemeToggle />
+    </ThemeProvider>
+  </StrictMode>
+);
