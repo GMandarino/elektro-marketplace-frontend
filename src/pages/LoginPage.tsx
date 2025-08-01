@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, Mail, Lock, Eye, EyeOff } from 'lucide-react';
 import elektroLogo from '../assets/elektro-logo.png';
 
+
+/*
+Eu tinha usado 'zod' anteriormente, mas haviam alguns erros e achei que seria melhor usar 'react-hook-form' para lidar com a validação do formulário, já que achei uma documentação na internet que me ajudou a entender melhor como usar. 
+Algumas coisas como 'React.FC'estou ainda entendendo como funciona por completo, mas deu para traduzir para o projeto depois de algumas horas de esforço.
+*/
+
+
 const LoginPage: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
 
